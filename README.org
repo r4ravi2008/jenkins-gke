@@ -842,8 +842,9 @@ helm install jenkins -f jenkins-values.yaml jenkinsci/jenkins
 **** Setup jenkins
 ***** DONE Manage plugins to install latest versions
 ** TODO Create Java repo.
+https://github.com/r4ravi2008/jenkins-java-repo/blob/main/Jenkinsfile#L2
 ** TODO Integrate Jenkins with Java Repo on github.
-*** TODO CICD
+*** TODO CICD - Jenkinsfile
 #+begin_src groovy
 
 pipeline {
