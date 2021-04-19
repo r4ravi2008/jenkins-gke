@@ -840,6 +840,11 @@ checkDeprecation: true
 helm install jenkins -f jenkins-values.yaml jenkinsci/jenkins
 #+end_src
 **** Setup jenkins
+***** Login to Jenkins
+To login you need to portforward to localhost from pod.
+#+begin_src bash
+kubectl port-forward jenkins-0 8080:8080 >> /dev/null
+#+end_src
 ***** DONE Manage plugins to install latest versions
 ** TODO Create Java repo.
 https://github.com/r4ravi2008/jenkins-java-repo/blob/main/Jenkinsfile#L2
